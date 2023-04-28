@@ -12,5 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background: ${({ theme }) => theme.color.white};
         word-break: break-word;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
     }
 `;

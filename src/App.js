@@ -1,9 +1,14 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Front from "./components/Front";
 
 function App() {
   return (
-    <Header>
-    </Header>
+    <>
+      <Header />
+      <Front />
+      <Footer />
+    </>
   );
 }
 

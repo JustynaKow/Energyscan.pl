@@ -9,11 +9,13 @@ const Menu = () => (
         <Navigation>
             <List>
                 <Link href="#cennik">
-                Ile to kosztuje?
+                    Ile to kosztuje?
                 </Link>
             </List>
             <List>
-                Dlaczego muszę to mieć?
+                <Link href="#przeslanki">
+                    Dlaczego muszę to mieć?
+                </Link>
             </List>
             <List>
                 Nasze usługi

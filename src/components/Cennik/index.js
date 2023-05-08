@@ -2,8 +2,8 @@ import { Kontener, Informacja, Paragraf, Sekcja, Rodzaje, Nieruchomości, Tytuł
 
 const Cennik = () => (
     <Sekcja>
-        <Kontener>
-            <Informacja id="cennik">
+        <Kontener id="cennik">
+            <Informacja>
                 Ile to kosztuje?
             </Informacja>
             <Paragraf>

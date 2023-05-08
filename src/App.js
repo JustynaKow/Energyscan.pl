@@ -1,13 +1,25 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Front from "./components/Front";
+import Faq from "./components/FAQ";
+import Menu from "./components/Menu";
+import Stopka from "./components/Stopka";
+import Tytuł from "./components/Tytuł";
+import Cennik from "./components/Cennik";
+import Kontakt from "./components/Kontakt";
+import Przesłanki from "./components/Przesłanki";
+import Usługi from "./components/Usługi";
+import Zespół from "./components/Zespół";
 
 function App() {
   return (
     <>
-      <Header />
-      <Front />
-      <Footer />
+      <Kontakt />
+      <Menu />
+      <Tytuł />
+      <Cennik />
+      <Przesłanki />
+      <Usługi />
+      <Faq />
+      <Zespół />
+      <Stopka />
     </>
   );
 }

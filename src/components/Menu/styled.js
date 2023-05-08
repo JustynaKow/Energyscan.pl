@@ -9,8 +9,10 @@ export const Kontener = styled.header`
     padding: 15px 50px;
 `;
 
-export const Logo = styled.div`
-    font-size: large;
+export const Logo = styled.img`
+    height: 100px;
+    width: 300px;
+    border: none;
 `;
 
 export const Navigation = styled.ul`

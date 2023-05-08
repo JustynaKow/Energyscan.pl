@@ -3,9 +3,7 @@ import { Kontener, Logo, Navigation, List, Link } from "./styled";
 
 const Menu = () => (
     <Kontener>
-        <Logo>
-            LOGO
-        </Logo>
+        <Logo src="https://github.com/JustynaKow/audyty/blob/main/src/images/firma.png" alt="logo EnergyScan" />
         <Navigation>
             <List>
                 <Link href="#cennik">

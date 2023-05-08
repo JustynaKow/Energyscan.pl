@@ -23,3 +23,12 @@ export const Navigation = styled.ul`
 export const List = styled.li`
     margin: 10px;
 `;
+
+export const Link = styled.a`
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.black};
+
+    &:hover{
+        color: ${({ theme }) => theme.color.eveningSea};
+    }
+`;

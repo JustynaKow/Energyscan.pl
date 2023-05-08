@@ -1,4 +1,4 @@
-import { Kontener, Logo, Navigation, List } from "./styled";
+import { Kontener, Logo, Navigation, List, Link } from "./styled";
 
 
 const Menu = () => (
@@ -8,7 +8,9 @@ const Menu = () => (
         </Logo>
         <Navigation>
             <List>
+                <Link href="#cennik">
                 Ile to kosztuje?
+                </Link>
             </List>
             <List>
                 Dlaczego muszę to mieć?

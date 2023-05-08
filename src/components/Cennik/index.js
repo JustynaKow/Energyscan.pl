@@ -1,4 +1,4 @@
-import { Kontener, Informacja, Paragraf, Sekcja, Rodzaje, Nieruchomości, Tytuł, Opis, IkonaDomu } from "./styled";
+import { Kontener, Informacja, Paragraf, Sekcja, Rodzaje, Nieruchomości, Tytuł, Opis, Dom, Lokal, Mieszkanie } from "./styled";
 
 const Cennik = () => (
     <Sekcja>
@@ -7,28 +7,32 @@ const Cennik = () => (
                 Ile to kosztuje?
             </Informacja>
             <Paragraf>
-                Cena zależy od rodzaju nieruchomości i jej specyfiki <br />
+                Cena zależy od rodzaju nieruchomości i jej specyfiki
+            </Paragraf>
+            <Paragraf>
                 Pamiętaj! Kara urzędowa za brak świadectwa to 5000 zł
             </Paragraf>
         </Kontener>
         <Rodzaje>
             <Nieruchomości>
                 <Tytuł>Mieszkanie</Tytuł>
+                <Mieszkanie />
                 <Opis>
                     od 700 zł
                 </Opis>
             </Nieruchomości>
             <Nieruchomości>
                 <Tytuł>Dom</Tytuł>
-                <IkonaDomu />
+                <Dom />
                 <Opis>
-                    od 800 zł 
+                    od 800 zł
                 </Opis>
             </Nieruchomości>
             <Nieruchomości>
                 <Tytuł>Lokal</Tytuł>
+                <Lokal />
                 <Opis>
-                    od 1000 zł 
+                    od 1000 zł
                 </Opis>
             </Nieruchomości>
         </Rodzaje>

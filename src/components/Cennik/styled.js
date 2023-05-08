@@ -1,5 +1,8 @@
 import styled from "styled-components";
-import dom from "../../images/dom.png";
+import dom from "../../images/dom.svg";
+import blok from "../../images/blok.svg";
+import lokal from "../../images/lokal.svg";
+
 
 export const Sekcja = styled.section`
     background: ${({ theme }) => theme.color.cararra};
@@ -12,11 +15,10 @@ export const Sekcja = styled.section`
 export const Kontener = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 `;
 
 export const Informacja = styled.h2`
-    margin: 0;
     text-transform: uppercase;
 `;
 
@@ -32,23 +34,48 @@ export const Rodzaje = styled.div`
 export const Nieruchomości = styled.div`
     background: ${({ theme }) => theme.color.white};
     border-radius: 20px;
-    padding: 100px 60px;
-    margin: 20px;
+    padding: 10 px;
+    margin: 10px;
     width: 200px;
+    height: 350px;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 export const Tytuł = styled.h3`
+    text-transform: uppercase;
+    margin: 20px;
 
 `;
 
-export const Opis = styled.p`
-
+export const Opis = styled.div`
+    border-radius: 10px;
+    background-color: ${({ theme }) => theme.color.husk};
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
 `;
 
-export const IkonaDomu = styled.div`
-    background-image: url("${dom}");
-    height: 200px;
+export const Dom = styled.div`
+    background: center / contain no-repeat url("${dom}");
+    width: 150px;
+    height: 150px;
+`;
+
+export const Mieszkanie = styled.div`
+    background: center / contain no-repeat url("${blok}");
+    width: 150px;
+    height: 150px;
+`;
+
+export const Lokal = styled.div`
+    background: center / contain no-repeat url("${lokal}");
+    width: 150px;
+    height: 150px;
 `;
 
 

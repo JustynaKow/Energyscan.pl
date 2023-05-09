@@ -1,7 +1,7 @@
-import { Kontener, Tytuł, Warunek, Podtytuł, Sprzedaż, Opis, Wynajem, Budowa, Dofinansowanie } from "./styled";
+import { Sekcja, Kontener, Tytuł, Warunek, Podtytuł, Sprzedaż, Opis, Wynajem, Budowa, Dofinansowanie } from "./styled";
 
 const Przesłanki = () => (
-    <>
+    <Sekcja>
         <Tytuł id="przeslanki">
             Dlaczego i kiedy muszę mieć certyfikat?
         </Tytuł>
@@ -43,7 +43,7 @@ const Przesłanki = () => (
                 </Opis>
             </Warunek>
         </Kontener>
-    </>
+    </Sekcja>
 );
 
 export default Przesłanki;

@@ -1,20 +1,26 @@
 import styled from "styled-components";
 import foto from "../../images/foto.svg";
 import rent from "../../images/rent.svg";
-import sale from "../../images/sale.svg";
-import sell from "../../images/sell.svg";
+import sell from "../../images/house.svg";
+import sale from "../../images/sell.svg";
+import tlo from "../../images/tlo.png";
+
+export const Sekcja = styled.section`
+    background: center / contain no-repeat url("${tlo}");
+    color: ${({theme}) => theme.color.white};
+    padding: 50px;
+`;
 
 export const Kontener = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px 50px;
+    padding: 50px 0;
     grid-gap: 20px;
 `;
 
 export const Tytuł = styled.h2`
     text-transform: uppercase;
     text-align: center;
-    color: ${({theme}) => theme.color.black};
 `;
 
 export const Warunek = styled.div`
@@ -25,38 +31,51 @@ export const Warunek = styled.div`
 
 export const Podtytuł = styled.h3`
     text-transform: uppercase;
+    color: ${({theme}) => theme.color.black};
     margin: 20px;
     padding: 10px;
     font-weight: bold;
 `;
 
-export const Sprzedaż = styled.div`
-    background: center / contain no-repeat url("${sale}") ${({theme}) => theme.color.husk};
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-`;
-
 export const Opis = styled.p`
 `;
 
+export const Sprzedaż = styled.div`
+    background: center / contain no-repeat url("${sale}");
+    width: 100px;
+    height: 100px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+`;
+
 export const Wynajem = styled.div`
-    background: center / contain no-repeat url("${rent}") ${({theme}) => theme.color.husk};
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    background: center / contain no-repeat url("${rent}");
+    width: 100px;
+    height: 100px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
 
 export const Budowa = styled.div`
-    background: center / contain no-repeat url("${sell}") ${({theme}) => theme.color.husk};
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    background: center / contain no-repeat url("${sell}");
+    width: 100px;
+    height: 100px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
 
 export const Dofinansowanie = styled.div`
-    background: center / contain no-repeat url("${foto}") ${({theme}) => theme.color.husk};
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    background: center / contain no-repeat url("${foto}");
+    width: 100px;
+    height: 100px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;

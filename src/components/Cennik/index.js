@@ -1,18 +1,16 @@
-import { Kontener, Informacja, Paragraf, Sekcja, Rodzaje, Nieruchomości, Tytuł, Opis, Dom, Lokal, Mieszkanie } from "./styled";
+import { Informacja, Paragraf, Sekcja, Rodzaje, Nieruchomości, Tytuł, Opis, Dom, Lokal, Mieszkanie } from "./styled";
 
 const Cennik = () => (
     <Sekcja>
-        <Kontener id="cennik">
-            <Informacja>
+            <Informacja id="cennik">
                 Ile to kosztuje?
             </Informacja>
             <Paragraf>
-                Cena zależy od rodzaju nieruchomości i jej specyfiki
+                Cena za świadectwo energetyczne zależy od rodzaju nieruchomości i jej specyfiki
             </Paragraf>
             <Paragraf>
                 Pamiętaj! Kara urzędowa za brak świadectwa to 5000 zł
             </Paragraf>
-        </Kontener>
         <Rodzaje>
             <Nieruchomości>
                 <Tytuł>Mieszkanie</Tytuł>

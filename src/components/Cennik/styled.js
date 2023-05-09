@@ -3,19 +3,9 @@ import dom from "../../images/dom.svg";
 import blok from "../../images/blok.svg";
 import lokal from "../../images/lokal.svg";
 
-
 export const Sekcja = styled.section`
-    background: ${({ theme }) => theme.color.white};
-    padding: 20px 50px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;    
-`;
-
-export const Kontener = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 20px 50px; 
+    text-align: center;
 `;
 
 export const Informacja = styled.h2`
@@ -23,13 +13,19 @@ export const Informacja = styled.h2`
 `;
 
 export const Paragraf = styled.p`
-    width: 300px;
     text-transform: uppercase;
+    font-weight: bold;
 `;
 
 export const Rodzaje = styled.div`
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const Nieruchomości = styled.div`
@@ -37,8 +33,8 @@ export const Nieruchomości = styled.div`
     border-radius: 20px;
     padding: 10 px;
     margin: 10px;
-    width: 200px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
@@ -57,8 +53,17 @@ export const Opis = styled.div`
     background-color: ${({ theme }) => theme.color.husk};
     text-transform: uppercase;
     margin: 20px;
+    width: 200px;
     padding: 10px;
     font-weight: bold;
+    color: ${({ theme }) => theme.color.white};
+    border: 2px solid ${({ theme }) => theme.color.husk};
+
+    &:hover {
+        background-color: ${({ theme }) => theme.color.white};
+        color: ${({ theme }) => theme.color.husk};
+        border: 2px solid ${({ theme }) => theme.color.husk};
+    }
 `;
 
 export const Dom = styled.div`

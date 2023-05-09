@@ -2,13 +2,16 @@ import styled from "styled-components";
 import firma from "../../images/energyscan.png";
 
 export const Kontener = styled.header`
-    background: ${({ theme }) => theme.color.husk};
+    background: ${({ theme }) => theme.color.white};
     color: ${({ theme }) => theme.color.black};
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    height: 100px;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
 `;
 
 export const Logo = styled.div`

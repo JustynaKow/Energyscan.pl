@@ -6,7 +6,7 @@ export const Wstęp = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 50px;
+    padding: 5px 20px;
     text-transform: uppercase;
     font-size: 14px;
 `;

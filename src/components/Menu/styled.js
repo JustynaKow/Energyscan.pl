@@ -11,7 +11,7 @@ export const Kontener = styled.header`
     height: 80px;
     position: sticky;
     top: 0;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
 `;
 
 export const Logo = styled.div`

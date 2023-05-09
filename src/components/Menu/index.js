@@ -5,13 +5,13 @@ const Menu = () => (
         <Logo />
         <Navigation>
             <List>
-                <Link href="#cennik">
-                    Ile to kosztuje?
+                <Link href="#przeslanki">
+                    Dlaczego muszę to mieć?
                 </Link>
             </List>
             <List>
-                <Link href="#przeslanki">
-                    Dlaczego muszę to mieć?
+                <Link href="#cennik">
+                    Ile to kosztuje?
                 </Link>
             </List>
             <List>

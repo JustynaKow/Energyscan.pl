@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wstęp = styled.div`
-    background: ${({ theme }) => theme.color.husk};
+    background: ${({ theme }) => theme.color.black};
     color: ${({ theme }) => theme.color.white};
     display: flex;
     justify-content: flex-end;
@@ -22,6 +22,6 @@ export const Telefon = styled.a`
     font-weight: bold;
 
     &:hover{
-        color: ${({ theme }) => theme.color.black};
+        color: ${({ theme }) => theme.color.husk};
     };
 `;

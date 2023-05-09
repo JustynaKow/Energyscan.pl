@@ -1,11 +1,11 @@
 export const theme = {
     color: {
-        black: "#000",
+        black: "#141414",
         tuna: "#33373d",
         white: "#fff",
         cararra: "#edede9",
-        eveningSea: "#055247",
-        husk: "#bfaa53"
+        husk: "#fcc521",
+        gamboge: "#E5A810",
     },
     breakpoint: {
         mobileMax: 767,

@@ -14,7 +14,7 @@ export const Kontener = styled.div`
 export const Tytuł = styled.h2`
     text-transform: uppercase;
     text-align: center;
-    color: ${({theme}) => theme.color.eveningSea};
+    color: ${({theme}) => theme.color.black};
 `;
 
 export const Warunek = styled.div`

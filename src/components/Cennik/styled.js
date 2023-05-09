@@ -5,7 +5,7 @@ import lokal from "../../images/lokal.svg";
 
 
 export const Sekcja = styled.section`
-    background: ${({ theme }) => theme.color.cararra};
+    background: ${({ theme }) => theme.color.white};
     padding: 20px 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -24,6 +24,7 @@ export const Informacja = styled.h2`
 
 export const Paragraf = styled.p`
     width: 300px;
+    text-transform: uppercase;
 `;
 
 export const Rodzaje = styled.div`

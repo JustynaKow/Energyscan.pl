@@ -14,8 +14,8 @@ function App() {
       <Kontakt />
       <Menu />
       <Tytuł />
-      <Cennik />
       <Przesłanki />
+      <Cennik />
       <Usługi />
       <Faq />
       <Zespół />

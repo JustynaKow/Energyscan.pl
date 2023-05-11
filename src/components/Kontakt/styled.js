@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wstęp = styled.div`
+export const Wrapper = styled.div`
     background: ${({ theme }) => theme.color.black};
     color: ${({ theme }) => theme.color.white};
     display: flex;
@@ -9,13 +9,14 @@ export const Wstęp = styled.div`
     padding: 5px 20px;
     text-transform: uppercase;
     font-size: 14px;
+    flex-wrap: wrap;
 `;
 
-export const Pytania = styled.p`
+export const Paragraph = styled.p`
     margin: 0 10px;
 `;
 
-export const Telefon = styled.a`
+export const Phone = styled.a`
     margin: 0 10px;
     text-decoration: none;
     color: ${({ theme }) => theme.color.white};

@@ -1,14 +1,14 @@
-import { Wstęp, Pytania, Telefon } from "./styled";
+import { Wrapper, Paragraph, Phone } from "./styled";
 
 const Kontakt = () => (
-    <Wstęp>
-        <Pytania>
+    <Wrapper>
+        <Paragraph>
             Masz pytania?
-        </Pytania>
-        <Telefon href="tel: +48783737050">
+        </Paragraph>
+        <Phone href="tel: +48783737050">
             zadzwoń +48 783 737 050
-        </Telefon>
-    </Wstęp>
+        </Phone>
+    </Wrapper>
 );
 
 export default Kontakt;

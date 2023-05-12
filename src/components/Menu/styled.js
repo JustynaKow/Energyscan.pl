@@ -9,6 +9,10 @@ export const Navigation = styled.header`
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
     position: sticky;
     top: 0px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        position: static;
+    }
 `;
 
 export const Logo = styled.img`

@@ -1,61 +1,48 @@
 import styled from "styled-components";
-import dom from "../../images/dom.svg";
-import blok from "../../images/blok.svg";
-import lokal from "../../images/lokal.svg";
 
-export const Sekcja = styled.section`
-    padding: 80px 50px; 
+export const Section = styled.section`
+    padding: 105px 50px 0;
     text-align: center;
-`;
-
-export const Informacja = styled.h2`
-    text-transform: uppercase;
-`;
-
-export const Paragraf = styled.p`
     text-transform: uppercase;
     font-weight: bold;
 `;
 
-export const Rodzaje = styled.div`
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-    justify-content: space-between;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        grid-template-columns: auto;
-        justify-content: center;
-    }
+export const Title = styled.h2`
+    margin: 0;
+    padding-bottom: 10px;
 `;
 
-export const Nieruchomości = styled.div`
+export const Wrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+`;
+
+export const Element = styled.div`
     background: ${({ theme }) => theme.color.white};
     border-radius: 20px;
-    padding: 10 px;
-    margin: 10px;
+    padding: 10px;
+    margin: 10px 0;
     width: 300px;
     height: 300px;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 `;
 
-export const Tytuł = styled.h3`
-    text-transform: uppercase;
+export const Subtitle = styled.h3`
     margin: 20px;
 `;
 
-export const Opis = styled.div`
+export const Price = styled.div`
     border-radius: 10px;
     background-color: ${({ theme }) => theme.color.husk};
-    text-transform: uppercase;
     margin: 20px;
     width: 200px;
     padding: 10px;
-    font-weight: bold;
     color: ${({ theme }) => theme.color.white};
     border: 2px solid ${({ theme }) => theme.color.husk};
 
@@ -66,25 +53,6 @@ export const Opis = styled.div`
     }
 `;
 
-export const Dom = styled.div`
-    background: center / contain no-repeat url("${dom}");
+export const Image = styled.img`
     width: 150px;
-    height: 150px;
 `;
-
-export const Mieszkanie = styled.div`
-    background: center / contain no-repeat url("${blok}");
-    width: 150px;
-    height: 150px;
-`;
-
-export const Lokal = styled.div`
-    background: center / contain no-repeat url("${lokal}");
-    width: 150px;
-    height: 150px;
-`;
-
-
-
-
-

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     background: ${({ theme }) => theme.color.black};
-    color: ${({ theme }) => theme.color.white};
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -14,6 +13,7 @@ export const Wrapper = styled.div`
 
 export const Paragraph = styled.p`
     margin: 0 10px;
+    color: ${({ theme }) => theme.color.white};
 `;
 
 export const Phone = styled.a`

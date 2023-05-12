@@ -8,6 +8,10 @@ export const StylledFront = styled.section`
     flex-direction: column;
     justify-content: space-around;
     align-items: left;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        height: 200px; 
+    }
 `;
 
 export const Title = styled.h1`

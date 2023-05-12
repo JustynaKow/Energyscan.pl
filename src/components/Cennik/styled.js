@@ -25,6 +25,7 @@ export const Rodzaje = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
+        justify-content: center;
     }
 `;
 
@@ -45,7 +46,6 @@ export const Nieruchomości = styled.div`
 export const Tytuł = styled.h3`
     text-transform: uppercase;
     margin: 20px;
-
 `;
 
 export const Opis = styled.div`

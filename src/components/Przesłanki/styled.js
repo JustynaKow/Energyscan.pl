@@ -6,7 +6,7 @@ import sale from "../../images/sell.svg";
 import tlo from "../../images/tlo.png";
 
 export const Sekcja = styled.section`
-    background: center / contain no-repeat url("${tlo}");
+    background: center / cover no-repeat url("${tlo}");
     color: ${({theme}) => theme.color.white};
     padding: 50px;
 `;
@@ -16,11 +16,22 @@ export const Kontener = styled.div`
     grid-template-columns: 1fr 1fr;
     padding: 50px 0;
     grid-gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    }
 `;
 
 export const Tytuł = styled.h2`
+    padding-top: 80px;
     text-transform: uppercase;
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        padding-top: 0px;
+        margin: 0;
+    }
 `;
 
 export const Warunek = styled.div`
@@ -35,6 +46,7 @@ export const Podtytuł = styled.h3`
     margin: 20px;
     padding: 10px;
     font-weight: bold;
+    text-align: center;
 `;
 
 export const Opis = styled.p`

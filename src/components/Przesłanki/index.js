@@ -1,49 +1,43 @@
-import { Sekcja, Kontener, Tytuł, Warunek, Podtytuł, Sprzedaż, Opis, Wynajem, Budowa, Dofinansowanie } from "./styled";
+import { Section, Wrapper, Title, Element, Subtitle, Paragraf, Image } from "./styled";
+import foto from "../../images/foto.svg";
+import rent from "../../images/rent.svg";
+import sell from "../../images/house.svg";
+import sale from "../../images/sell.svg";
 
 const Przesłanki = () => (
-    <Sekcja>
-        <Tytuł id="przeslanki">
-            Dlaczego i kiedy muszę mieć certyfikat?
-        </Tytuł>
-        <Kontener>
-            <Warunek>
-                <Sprzedaż />
-                <Podtytuł>
-                    Sprzedaż
-                </Podtytuł>
-                <Opis>
+    <Section id="przeslanki">
+        <Title> Dlaczego i kiedy muszę mieć certyfikat? </Title>
+        <Wrapper>
+            <Element>
+                <Image src={sale} alt="sprzedaż domu, miekszania" />
+                <Subtitle> Sprzedaż </Subtitle>
+                <Paragraf>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                </Opis>
-            </Warunek>
-            <Warunek>
-                <Wynajem />
-                <Podtytuł>
-                    Wynajem
-                </Podtytuł>
-                <Opis>
+                </Paragraf>
+            </Element>
+            <Element>
+                <Image src={rent} alt="wynajem domu, mieszkania" />
+                <Subtitle> Wynajem </Subtitle>
+                <Paragraf>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                </Opis>
-            </Warunek>
-            <Warunek>
-                <Budowa />
-                <Podtytuł>
-                    Zakończenie budowy
-                </Podtytuł>
-                <Opis>
+                </Paragraf>
+            </Element>
+            <Element>
+                <Image src={sell} alt="budowa domu" />
+                <Subtitle> Zakończenie budowy </Subtitle>
+                <Paragraf>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                </Opis>
-            </Warunek>
-            <Warunek>
-                <Dofinansowanie />
-                <Podtytuł>
-                    Dofinansowanie
-                </Podtytuł>
-                <Opis>
+                </Paragraf>
+            </Element>
+            <Element>
+                <Image src={foto} alt="dofinansowanie, dopłaty" />
+                <Subtitle> Dofinansowanie </Subtitle>
+                <Paragraf>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                </Opis>
-            </Warunek>
-        </Kontener>
-    </Sekcja>
+                </Paragraf>
+            </Element>
+        </Wrapper>
+    </Section>
 );
 
 export default Przesłanki;

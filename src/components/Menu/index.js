@@ -1,33 +1,19 @@
-import { Kontener, Logo, Navigation, List, Link } from "./styled";
+import { Navigation, Logo, Link } from "./styled";
+import firma from "../../images/energyscan.png";
+
 
 const Menu = () => (
-    <Kontener>
-        <Logo />
-        <Navigation>
-            <List>
-                <Link href="#przeslanki">
-                    Dlaczego muszę to mieć?
-                </Link>
-            </List>
-            <List>
-                <Link href="#cennik">
-                    Ile to kosztuje?
-                </Link>
-            </List>
-            <List>
-                Nasze usługi
-            </List>
-            <List>
-                FAQ
-            </List>
-            <List>
-                O nas
-            </List>
-            <List>
-                Kontakt
-            </List>
-        </Navigation>
-    </Kontener>
+    <Navigation>
+        <Logo src={firma} alt="logo EnergyScan"/>
+        <div>
+            <Link href="#przeslanki">Dlaczego muszę to mieć?</Link>
+            <Link href="#cennik">Ile to kosztuje?</Link>
+            <Link>Nasze usługi</Link>
+            <Link>FAQ</Link>
+            <Link>O nas</Link>
+            <Link>Kontakt</Link>
+        </div>
+    </Navigation>
 );
 
 export default Menu;

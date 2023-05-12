@@ -7,6 +7,7 @@ import Kontakt from "./components/Kontakt";
 import Przesłanki from "./components/Przesłanki";
 import Usługi from "./components/Usługi";
 import Zespół from "./components/Zespół";
+import Formularz from "./components/Formularz";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Kontakt />
       <Menu />
       <Tytuł />
+      <Formularz />
       <Przesłanki />
       <Cennik />
       <Usługi />

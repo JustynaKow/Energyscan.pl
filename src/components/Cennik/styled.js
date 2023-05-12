@@ -4,7 +4,7 @@ import blok from "../../images/blok.svg";
 import lokal from "../../images/lokal.svg";
 
 export const Sekcja = styled.section`
-    padding: 20px 50px; 
+    padding: 80px 50px; 
     text-align: center;
 `;
 
@@ -24,7 +24,7 @@ export const Rodzaje = styled.div`
     justify-content: space-between;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         justify-content: center;
     }
 `;

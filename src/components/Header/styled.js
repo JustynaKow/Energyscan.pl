@@ -3,6 +3,7 @@ import background from "../../images/background2.svg";
 
 export const StyledHeader = styled.header`
     background: center / cover no-repeat url("${background}");
+    box-shadow: 0px 7px 20px ${({ theme }) => theme.color.black};
     color: ${({ theme }) => theme.color.white};
   `;
 
@@ -38,8 +39,8 @@ export const Object = styled.div`
 `;
 
 export const Photo = styled.img`
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 `;
 
 export const Article = styled.p`

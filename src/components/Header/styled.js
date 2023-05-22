@@ -1,49 +1,31 @@
 import styled from "styled-components";
-import background from "../../images/background2.svg";
+import background from "../../images/tlo.svg";
 
 export const StyledHeader = styled.header`
     background: center / cover no-repeat url("${background}");
-    box-shadow: 0px 7px 20px ${({ theme }) => theme.color.black};
     color: ${({ theme }) => theme.color.white};
-  `;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+`;
 
 export const Information = styled.article`
-    background: rgba(255,255,255,0.25);
+    background: rgb(226 177 50 / 67%);
     width: 500px;
-    height: 50px;
+    padding: 20px;
     margin: 20px auto;
-    border-radius: 20px;
-    border: 1px solid ${({ theme }) => theme.color.white};
+    border-radius: 40px;
     display: flex;
     align-items: center;
-`; 
+`;
 
 export const Paragraph = styled.p`
     margin: auto;
-    font-weight: bold;
-`;
-
-export const Wrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-`;
-
-export const Object = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-`;
-
-export const Photo = styled.img`
-    width: 70px;
-    height: 70px;
-`;
-
-export const Article = styled.p`
-    max-width: 300px;
     text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
 `;
+

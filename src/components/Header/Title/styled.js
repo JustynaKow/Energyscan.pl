@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    height: 350px;
+    height: 400px;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: normal;
     margin: 50px 50px 0;
     max-width: 900px;
@@ -27,4 +27,15 @@ export const Heading = styled.h1`
 
 export const Subheading = styled.h2`
     margin: 20px 50px;
+    font-weight: normal;
+`;
+
+export const Dot = styled.p`
+    color: ${({ theme }) => theme.color.husk};
+    font-weight: bold;
+`;
+
+export const Paragraph = styled.div`
+    display: flex;
+    align-items: center;
 `;

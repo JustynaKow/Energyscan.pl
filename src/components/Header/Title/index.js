@@ -1,13 +1,23 @@
-import { Wrapper, Heading, Subheading } from "./styled";
+import { Wrapper, Heading, Subheading, Dot, Paragraph } from "./styled";
 
 const Title = () => (
     <Wrapper>
         <Heading>
             Świadectwa Charakterystyki Energetycznej
         </Heading>
-        <Subheading>
-            Sejny - Suwałki - Augustów
-        </Subheading>
+        <Paragraph>
+            <Subheading>
+                Sejny
+            </Subheading>
+            <Dot>.</Dot>
+            <Subheading>
+                Suwałki
+            </Subheading>
+            <Dot>.</Dot>
+            <Subheading>
+                Augustów
+            </Subheading>
+        </Paragraph>
     </Wrapper>
 );
 

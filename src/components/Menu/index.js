@@ -26,7 +26,6 @@ const Menu = () => {
                     <Link href="#reasons">Dlaczego muszę to mieć?</Link>
                     <Link href="#price">Ile to kosztuje?</Link>
                     <Link href="#services">Nasze usługi</Link>
-                    <Link>FAQ</Link>
                     <Link href="#aboutUs">O nas</Link>
                     <Link href="#contact">Kontakt</Link>
                 </div>

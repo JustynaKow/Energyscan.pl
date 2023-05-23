@@ -5,6 +5,7 @@ import { theme } from "../../theme";
 import phone from "../../images/phone.svg";
 import massage from "../../images/massage.svg";
 import facebook from "../../images/facebook.svg";
+import Contact from "../../constants";
 
 const Menu = () => {
     const isMobile = useMediaQuery({ maxWidth: theme.breakpoint.mobileMax });
@@ -12,13 +13,13 @@ const Menu = () => {
     return (
         <Navigation>
             <Logo src={logo} alt="logo EnergyScan" />
-            <a href="tel:+48530196930">
+            <a href={`tel:${Contact.PHONE}`}>
                 <Icon src={phone} alt="Telefon" />
             </a>
-            <a href="mailto:biuro@energyscan.pl" >
-                <Icon src={massage} alt="Wiadomość" />
+            <a href={`mailto:${Contact.EMAIL}`}>
+                <Icon src={massage} alt="E-mail" />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100092561449395">
+            <a href={`${Contact.FACEBOOK}`}>
                 <Icon src={facebook} alt="Facebook" />
             </a>
             {!isMobile && (
@@ -27,7 +28,7 @@ const Menu = () => {
                     <Link href="#price">Ile to kosztuje?</Link>
                     <Link href="#services">Nasze usługi</Link>
                     <Link href="#aboutUs">O nas</Link>
-                    <Link href="#contact">Kontakt</Link>
+                    <Link href="#footer">Kontakt</Link>
                 </div>
             )}
         </Navigation >

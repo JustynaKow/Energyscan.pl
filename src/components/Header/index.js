@@ -1,13 +1,21 @@
-import Title from "./Title";
-import { StyledHeader, Information, Paragraph } from "./styled";
+import { Wrapper, Heading, Paragraph, Subheading, Dot } from "./styled";
 
 const Header = () => (
-  <StyledHeader>
-    <Title />
-    <Information>
-      <Paragraph>Obowiązek posiadania świadectw od dnia 29.04.2023</Paragraph>
-    </Information>
-  </StyledHeader>
+    <Wrapper>
+        <Heading>
+            Świadectwa Charakterystyki Energetycznej
+        </Heading>
+        <Subheading>
+            Sejny
+            <Dot>·</Dot>
+            Suwałki
+            <Dot>·</Dot>
+            Augustów
+        </Subheading>
+        <Paragraph>
+            Obowiązek posiadania świadectw od dnia 29.04.2023
+        </Paragraph>
+    </Wrapper>
 );
 
 export default Header;

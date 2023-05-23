@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Navigation = styled.nav`
     background: rgb(27 27 27 / 25%);
-    //background: rgb(226 177 50 / 67%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

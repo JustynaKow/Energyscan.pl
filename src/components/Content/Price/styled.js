@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-    padding: 105px 100px 0;
-`;
-
-export const Title = styled.h2`
-    text-transform: uppercase;
-    margin: 0 20px;
-    font-size: 2.5rem;
-    font-weight: normal;
-    border-bottom: 5px solid ${({ theme }) => theme.color.husk};
-`;
-
 export const Paragraph = styled.p`
     margin: 50px 40px;
     line-height: 1.5;

@@ -1,18 +1,5 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-    padding: 105px 100px 20px;
-    width: 100%;
-`;
-
-export const Title = styled.h2`
-    text-transform: uppercase;
-    margin: 0 20px;
-    font-size: 2.5rem;
-    font-weight: normal;
-    border-bottom: 5px solid ${({ theme }) => theme.color.husk};
-`;
-
 export const Icon = styled.img`
     width: 40px;
 `;

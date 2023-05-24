@@ -1,4 +1,5 @@
-import { Section, Wrapper, Title, Element, Subtitle, Paragraf, Image, Article, Photo, Container } from "./styled";
+import { Wrapper, Element, Subtitle, Paragraf, Image, Article, Photo, Container } from "./styled";
+import { Title, Section } from "../styled";
 import foto from "../../../images/foto.svg";
 import mandate from "../../../images/mandate.svg";
 import sell from "../../../images/sell.svg";

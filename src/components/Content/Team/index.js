@@ -1,8 +1,9 @@
-import { Wrapper, Title, Icon, Subtitle, Article, Object } from "./styled";
+import { Icon, Subtitle, Article, Object } from "./styled";
 import check from "../../../images/check.svg";
+import { Section, Title } from "../styled";
 
 const Team = () => (
-    <Wrapper id="aboutUs">
+    <Section id="aboutUs">
         <Title>Co nas wyróżnia</Title>
         <Object>
             <Icon src={check} alt="zaznaczona ikona" />
@@ -57,7 +58,7 @@ const Team = () => (
             również pomóc Ci zrozumieć wyniki i wskazać możliwości poprawy efektywności
             energetycznej Twojej nieruchomości.
         </Article>
-    </Wrapper>
+    </Section>
 );
 
 export default Team;

@@ -1,4 +1,5 @@
-import { Section, Wrapper, Title, Paragraph } from "./styled";
+import { Wrapper, Paragraph } from "./styled";
+import { Section, Title } from "../styled";
 import PriceBox from "./PriceBox";
 import { prices } from "./prices";
 

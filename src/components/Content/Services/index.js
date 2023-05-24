@@ -1,7 +1,8 @@
-import { Wrapper, Title, Object, Circle, Subtitle, Description } from "./styled";
+import { Object, Circle, Subtitle, Description } from "./styled";
+import { Section , Title } from "../styled";
 
 const Services = () => (
-    <Wrapper id="services">
+    <Section id="services">
         <Title>Nasze usługi</Title>
         <Description>
             Jesteśmy zespołem profesjonalistów, specjalizujących się w dziedzinie energetyki. <br />
@@ -19,7 +20,7 @@ const Services = () => (
                 <Subtitle>Pomiary instalacji energetycznej</Subtitle>
             </Circle>
         </Object>
-    </Wrapper>
+    </Section>
 );
 
 export default Services;

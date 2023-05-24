@@ -12,10 +12,16 @@ export const Wrapper = styled.header`
     z-index: 1;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 120px 10px 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        position: static;
+        height: 100%;
+    }
 `;
 
 export const Heading = styled.h1`
@@ -34,7 +40,9 @@ export const Subheading = styled.h2`
     font-weight: normal;
     text-transform: uppercase;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 `;
 
 export const Dot = styled.span`

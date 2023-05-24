@@ -10,7 +10,11 @@ export const Navigation = styled.nav`
     position: fixed;
     width: 100%;
     z-index: 4;
-    `;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        
+    }
+`;
 
 export const Logo = styled.img`
     width: 300px;
@@ -24,6 +28,7 @@ export const Icon = styled.img`
     height: 20px;
     position: relative;
     z-index: 2;
+    margin: 10px;
 
     &:hover{
         transform: scale(1.2);

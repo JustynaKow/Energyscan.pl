@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 export const Paragraph = styled.p`
-    margin: 50px 40px;
+    margin: 30px 20px;
     line-height: 1.5;
     text-align: justify;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        margin: 10px;
+    }
 `;
 
 export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
-    margin: 50px 0 30px;
+    margin: 20px 30px;
     flex-wrap: wrap;
 `;
 
@@ -40,6 +44,7 @@ export const Cost = styled.div`
     color: ${({ theme }) => theme.color.white};
     border: 2px solid ${({ theme }) => theme.color.husk};
     text-align: center;
+    font-weight: bold;
 
     &:hover {
         background-color: ${({ theme }) => theme.color.white};

@@ -2,9 +2,12 @@ import styled from "styled-components";
 import circle from "../../../images/kolo.svg";
 
 export const Description = styled.p`
-    margin: 50px 40px;
+    margin: 30px 20px;
     line-height: 1.5;
-    text-align: justify;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        margin: 10px;
+    }
 `;
 
 export const Object = styled.div`

@@ -35,6 +35,11 @@ export const Title = styled.h2`
     font-size: 2rem;
     font-weight: normal;
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: 1rem;
+    }
+
 `;
 
 export const Icon = styled.img`

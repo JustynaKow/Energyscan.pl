@@ -20,4 +20,8 @@ export const Article = styled.p`
     text-align: justify;
     line-height: 1.5;
     padding: 0px 70px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        padding: 0px 10px;
+    }
 `;

@@ -1,28 +1,31 @@
-import { Wrapper, Title, Icon, Object, Link } from "./styled";
+import { Wrapper, Logo, Title, Icon, Object, Link } from "./styled";
 import phone from "../../../images/tel.svg";
 import mail from "../../../images/mail.svg";
 import location from "../../../images/location.svg";
 import media from "../../../images/media.svg";
 import Contact from "../../../constants";
+import logo from "../../../images/energyscan.png";
 
 const Footer = () => (
     <Wrapper id="footer">
-        <Title>Zadzwoń:</Title>
+        <Logo src={logo} alt="logo EnergyScan" />
         <Object>
-            <Icon src={phone} alt="ikona telefonu" />
-            <Link href={`tel:${Contact.PHONE}`}>{Contact.PHONE}</Link>
-        </Object>
-        <Object>
-            <Icon src={mail} alt="ikona e-mail" />
-            <Link href={`mailto:${Contact.EMAIL}`}>{Contact.EMAIL}</Link>
-        </Object>
-        <Object>
-            <Icon src={location} alt="ikona lokalizacji" />
-            <p>ul. Ks. J.J. Zawadzkiego 2 lok.012 <br /> 16-400 Suwałki</p>
-        </Object>
-        <Object>
-            <Icon src={media} alt="ikona lokalizacji" />
-            <Link href={`${Contact.FACEBOOK}`}>Facebook</Link>
+            <Link href={`tel:${Contact.PHONE}`}>
+                <Icon src={phone} alt="ikona telefonu" />
+                    <Title>Zadzwoń do nas: +48&nbsp;530&nbsp;196&nbsp;930 </Title>
+            </Link>
+            <Link href={`mailto:${Contact.EMAIL}`}>
+                <Icon src={mail} alt="ikona e-mail" />
+                {Contact.EMAIL}
+            </Link>
+            <Link href={`${Contact.ADRESS}`}>
+                <Icon src={location} alt="ikona lokalizacji" />
+                {Contact.ADRESS}
+            </Link>
+            <Link href={`${Contact.FACEBOOK}`}>
+                <Icon src={media} alt="ikona lokalizacji" />
+                Facebook
+            </Link>
         </Object>
     </Wrapper>
 

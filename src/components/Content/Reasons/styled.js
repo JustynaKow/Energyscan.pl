@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Article = styled.article`
     margin: 30px 20px;
     line-height: 1.5;
+    max-width: 500px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin: 10px;
@@ -11,17 +12,19 @@ export const Article = styled.article`
 
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     
-
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const Photo = styled.img`
-    width: 300px;
-    margin: 50px 0;
+    width: 500px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        width: 300px;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -39,13 +42,13 @@ export const Element = styled.div`
 export const Subtitle = styled.h3`
     text-transform: uppercase;
     font-size: 1rem;
-    margin: 0 20px;
+    margin: 10px 20px;
 `;
 
 export const Paragraf = styled.p`
     line-height: 1.2;
     max-width: 700px;
-    margin: 20px 0;
+    margin: 0 0 0 70px;
 `;
 
 export const Image = styled.img`

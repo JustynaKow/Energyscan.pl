@@ -13,7 +13,7 @@ const Clients = ({ title }) => {
     ];
 
     return (
-        <Section>
+        <Section id="clients">
             <Title>
                 {title}
             </Title>

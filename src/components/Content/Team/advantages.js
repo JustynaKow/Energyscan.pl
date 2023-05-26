@@ -1,8 +1,5 @@
-import check from "../../../images/check.svg";
-
 export const advantages = [
     {
-        photo: check,
         subtitle: `Wszechstronna i wykształcona kadra`,
         article: `Nasz zespół składa się z wyjątkowych ekspertów oraz doświadczonych inżynierów, którzy
         pasjonują się dziedziną audytów energetycznych i świadectw charakterystyki energetycznej.
@@ -12,7 +9,6 @@ export const advantages = [
         energetycznej dla ich nieruchomości.`,
     },
     {
-        photo: check,
         subtitle: `Certyfikowani i doświadczeni Audytorzy`,
         article: `Wszyscy nasi audytorzy posiadają wpis do rejestru osób uprawnionych do wykonywania
         świadectw charakterystyki energetycznej, prowadzonego przez Ministerstwo Rozwoju i
@@ -23,7 +19,6 @@ export const advantages = [
         energetycznej, spełniające najwyższe standardy jakości.`,
     },
     {
-        photo: check,
         subtitle: `Ubezpieczenie OC - Twoje bezpieczeństwo`,
         article: `Wszyscy nasi audytorzy posiadają obowiązkowe ubezpieczenie OC zgodne z normami
         prawnymi. Dbamy o to, aby zapewnić naszym klientom pełne bezpieczeństwo i ochronę w
@@ -34,14 +29,12 @@ export const advantages = [
         zadowolenie.`,
     },
     {
-        photo: check,
         subtitle: `Gwarancja jakości`,
         article: `Gwarantujemy, że każde świadectwo charakterystyki energetycznej, które sporządzimy,
         będzie spełniać najwyższe standardy jakości. Nasz zespół audytorów i inżynierów zadba o
         każdy detal, aby zapewnić dokładne pomiary, rzetelne analizy i precyzyjne raporty.`,
     },
     {
-        photo: check,
         subtitle: `Kompleksowe wsparcie`,
         article: `Wybierając EnergyScan, otrzymujesz nie tylko profesjonalne usługi audytów energetycznych
         i świadectw charakterystyki energetycznej, ale także pełne wsparcie i doradztwo na każdym

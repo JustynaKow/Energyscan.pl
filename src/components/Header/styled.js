@@ -12,7 +12,6 @@ export const Wrapper = styled.header`
     z-index: 1;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;

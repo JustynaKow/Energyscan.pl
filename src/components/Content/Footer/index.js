@@ -12,7 +12,7 @@ const Footer = () => (
         <Object>
             <Link href={`tel:${Contact.PHONE}`}>
                 <Icon src={phone} alt="ikona telefonu" />
-                <Title>Zadzwoń do nas: +48&nbsp;530&nbsp;196&nbsp;930 </Title>
+                <Title> Zadzwoń do nas: +48&nbsp;530&nbsp;196&nbsp;930 </Title>
             </Link>
             <Link href={`mailto:${Contact.EMAIL}`}>
                 <Icon src={mail} alt="ikona e-mail" />

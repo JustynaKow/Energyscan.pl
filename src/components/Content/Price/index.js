@@ -1,16 +1,20 @@
-import { Wrapper, Paragraph } from "./styled";
+import { Wrapper, Paragraph, Article } from "./styled";
 import { Section, Title } from "../styled";
 import PriceBox from "./PriceBox";
 import { prices } from "./prices";
 
-const Price = () => (
+const Price = ({ title }) => (
     <Section id="price">
         <Title>
-            Ile to kosztuje?
+            {title}
         </Title>
         <Paragraph>
-            Cena za świadectwo energetyczne zależy od rodzaju nieruchomości i jej specyfiki <br />
-            <strong>Pamiętaj! Kara urzędowa za brak świadectwa to 5000 zł</strong>
+            Cena za świadectwo energetyczne zależy od rodzaju nieruchomości i jej specyfiki. <br />
+            Wycena oraz czas wykonania jest indywidualny dla każdego klienta.
+        </Paragraph>
+        <Paragraph>
+            Na ostateczną cenę mają wpływ czynniki takie, jak: <br />
+            powierzchnia nieruchomości, sposób ogrzewania czy odległość od naszego biura, gdy występuje konieczność dokonania pomiarów.
         </Paragraph>
         <Wrapper>
             {prices.map(({ subtitle, imgSrc, price }) => (
@@ -22,6 +26,12 @@ const Price = () => (
                 />
             ))}
         </Wrapper>
+        <Article>
+            <strong>
+                Zachęcamy do kontaktu telefonicznego aby porozmawiać o szczegółach współpracy!
+            </strong>
+        </Article>
+
     </Section>
 );
 

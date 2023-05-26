@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const Paragraph = styled.p`
-    margin: 30px 20px;
     line-height: 1.5;
-    text-align: justify;
+    margin: 30px 20px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin: 10px;
     }
+`;
+
+export const Article = styled(Paragraph)`
+    text-align: center;
+    margin-top: 50px;
 `;
 
 export const Wrapper = styled.div`
@@ -38,21 +42,22 @@ export const Subtitle = styled.h3`
 export const Cost = styled.div`
     border-radius: 10px;
     background-color: ${({ theme }) => theme.color.husk};
+    color: ${({ theme }) => theme.color.white};
+    border: 2px solid ${({ theme }) => theme.color.husk};
     margin: 20px;
     width: 200px;
     padding: 10px;
-    color: ${({ theme }) => theme.color.white};
-    border: 2px solid ${({ theme }) => theme.color.husk};
     text-align: center;
     font-weight: bold;
 
     &:hover {
-        background-color: ${({ theme }) => theme.color.white};
-        color: ${({ theme }) => theme.color.husk};
-        border: 2px solid ${({ theme }) => theme.color.husk};
+    background-color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.gamboge};
+    border: 2px solid ${({ theme }) => theme.color.gamboge};
     }
 `;
 
 export const Image = styled.img`
     width: 150px;
+    transform: scale(1.3);
 `;

@@ -46,6 +46,6 @@ export const Image = styled.img`
 
 export const Article = styled.p`
     max-width: 500px;
-    line-height: 1.2;
     margin: 30px 0;
+    line-height: 1.5;
 `;

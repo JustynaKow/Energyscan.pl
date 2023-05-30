@@ -22,7 +22,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Element = styled.div`
-    background: ${({ theme }) => theme.color.white};
     border-radius: 20px;
     padding: 10px;
     margin: 10px 0;
@@ -37,6 +36,7 @@ export const Element = styled.div`
 
 export const Subtitle = styled.h3`
     margin: 20px;
+    text-transform: uppercase;
 `;
 
 export const Cost = styled.div`
@@ -49,11 +49,12 @@ export const Cost = styled.div`
     padding: 10px;
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 
     &:hover {
-    background-color: ${({ theme }) => theme.color.white};
-    color: ${({ theme }) => theme.color.gamboge};
-    border: 2px solid ${({ theme }) => theme.color.gamboge};
+        background-color: ${({ theme }) => theme.color.white};
+        color: ${({ theme }) => theme.color.husk};
+        border: 2px solid ${({ theme }) => theme.color.husk};
     }
 `;
 

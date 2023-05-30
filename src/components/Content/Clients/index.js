@@ -31,8 +31,8 @@ const Clients = ({ title }) => {
                 <div>
                     <Article>
                         W przypadku braku świadectwa charakterystyki energetycznej podczas wynajmu lub
-                        sprzedaży nieruchomości istnieje ryzyko otrzymania grzywny o wysokości nawet do
-                        <strong>5 tysięcy złotych.</strong>
+                        sprzedaży nieruchomości istnieje ryzyko otrzymania grzywny o wysokości nawet do 
+                        <strong> 5 tysięcy złotych.</strong>
                     </Article>
                     <Image src={houses} alt="energooszczędny dom" />
                 </div>

@@ -28,9 +28,9 @@ export const Photo = styled.img`
     box-shadow: 2px 1px 10px ${({ theme }) => theme.color.husk};
 `;
 
-export const Paragraph = styled.h5`
+export const Paragraph = styled.h4`
     max-width: 400px;
-    font-size: 1em;
+    font-size: 1rem;
     text-transform: uppercase;
     margin: 10px 20px;
 `;

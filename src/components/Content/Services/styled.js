@@ -16,9 +16,6 @@ export const Subtitle = styled.h3`
 
 export const Photo = styled.img`
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 2px 1px 10px ${({ theme }) => theme.color.husk};
 `;
 
 export const Wrapper = styled.div`

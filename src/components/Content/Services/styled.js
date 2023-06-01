@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import circle from "../../../images/kolo.svg";
 
 export const Description = styled.p`
     margin: 30px 20px;
@@ -10,23 +9,43 @@ export const Description = styled.p`
     }
 `;
 
+export const Subtitle = styled.h3`
+    text-transform: uppercase;
+    margin: 20px;
+`;
+
+export const Photo = styled.img`
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 1px 10px ${({ theme }) => theme.color.husk};
+`;
+
+export const Wrapper = styled.div`
+    margin: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        grid-template-columns: 1fr;
+    }        
+`;
+
 export const Object = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-`;
-
-export const Circle = styled.div`
-    background: center / cover no-repeat url("${circle}");
-    height: 200px;
-    width: 200px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 10px;
 `;
 
-export const Subtitle = styled.h3`
-    width: 150px;
+export const Images = styled.img`
+    width: 300px;
+`
+
+export const List = styled.p`
+    max-width: 500px;
+    line-height: 1.5;
+    padding: 0;
+`;
+
+export const Item = styled.li`
+    list-style: none;
 `;

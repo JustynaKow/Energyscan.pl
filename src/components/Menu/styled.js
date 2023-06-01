@@ -7,13 +7,10 @@ export const Navigation = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    position: fixed;
+    position: relative;
     width: 100%;
-    z-index: 4;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        
-    }
+    z-index: 2;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 `;
 
 export const Logo = styled.img`
@@ -23,18 +20,6 @@ export const Logo = styled.img`
     transform: scale(1.4);
 `;
 
-export const Icon = styled.img`
-    width: 20px;
-    height: 20px;
-    position: relative;
-    z-index: 2;
-    margin: 10px;
-
-    &:hover{
-        transform: scale(1.2);
-    }
-`;
-
 export const Link = styled.a`
     margin: 10px;
     text-decoration: none;
@@ -42,7 +27,7 @@ export const Link = styled.a`
     text-transform: uppercase;
     font-weight: bold;
 
-    &:hover{
+    &:hover {
         color: ${({ theme }) => theme.color.husk};
-    }
+    };
 `;

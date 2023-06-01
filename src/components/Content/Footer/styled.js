@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
     font-size: 1.2rem;
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
     justify-content: space-between;
 
@@ -31,17 +31,6 @@ export const Object = styled.div`
     flex-wrap: wrap;
 `;
 
-export const Title = styled.h2`
-    font-size: 2rem;
-    font-weight: normal;
-    margin: 0;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        font-size: 1rem;
-    }
-
-`;
-
 export const Icon = styled.img`
     width: 40px;
     margin: 10px 20px;
@@ -53,4 +42,8 @@ export const Link = styled.a`
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    &:hover{
+        text-decoration: underline;
+    }
 `;

@@ -13,8 +13,8 @@ const Content = () => (
     <Clients title="Kto powinien posiadać świadectwo charakterystyki energetycznej?" />
     <Price title="Ile to kosztuje?" />
     <Profit title="O czym informuje świadectwo charakterystyki energetycznej?" />
-    <Services />
-    <Team />
+    <Services title="Nasze pozostałe usługi" />
+    <Team title="Co nas wyróżnia" />
     <Footer />
   </Container>
 );

@@ -35,7 +35,7 @@ export const Images = styled.img`
 width: 300px;
 `
 
-export const List = styled.p`
+export const List = styled.ul`
 max-width: 700px;
 line-height: 1.5;
 padding: 0;

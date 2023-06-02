@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "../../images/tlo.png";
+import background from "../../images/tlo.svg";
 
 export const Wrapper = styled.header`
     background: center / cover no-repeat url("${background}");

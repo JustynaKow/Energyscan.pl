@@ -1,5 +1,5 @@
-import pomiary from "../../../images/pomiary.svg";
-import audyty from "../../../images/audyty.svg";
+import pomiary from "../../../images/pomiary.webp";
+import audyty from "../../../images/audyty.webp";
 
 export const services = [
     {

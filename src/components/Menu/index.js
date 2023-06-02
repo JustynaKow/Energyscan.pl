@@ -1,7 +1,7 @@
 import { Navigation, Logo, Link, Icon, Wrapper } from "./styled";
 import { useMediaQuery } from "react-responsive";
 import { theme } from "../../theme";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.webp";
 
 const Menu = () => {
     const isMobile = useMediaQuery({ maxWidth: theme.breakpoint.mobileMax });

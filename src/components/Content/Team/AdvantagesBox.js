@@ -1,5 +1,5 @@
 import { Object, Icon, Subtitle, Article } from "./styled";
-import check from "../../../images/check.svg";
+import check from "../../../images/check.webp";
 
 const AdvantagesBox = ({ subtitle, article }) => (
     <>

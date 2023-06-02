@@ -1,6 +1,6 @@
-import foto from "../../../images/foto.svg";
-import sell from "../../../images/sell.svg";
-import sale from "../../../images/building.svg";
+import foto from "../../../images/foto.webp";
+import sell from "../../../images/sell.webp";
+import sale from "../../../images/building.webp";
 
 export const reasons = [
     {

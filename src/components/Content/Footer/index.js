@@ -1,5 +1,5 @@
 import { Wrapper, Logo, Icon, Object, Link } from "./styled";
-import logo from "../../../images/energyscan.png";
+import logo from "../../../images/energyscan.webp";
 import { footer } from "./footer";
 
 const Footer = () => (

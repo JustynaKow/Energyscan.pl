@@ -1,7 +1,7 @@
 import Contact from "../../../constants";
-import phone from "../../../images/tel.svg";
-import mail from "../../../images/mail.svg";
-import media from "../../../images/media.svg";
+import phone from "../../../images/tel.webp";
+import mail from "../../../images/mail.webp";
+import media from "../../../images/media.webp";
 
 export const footer = [
 {

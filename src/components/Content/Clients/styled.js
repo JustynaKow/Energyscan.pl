@@ -24,7 +24,7 @@ export const Photo = styled.img`
     width: 50px;
 `;
 
-export const Paragraph = styled.h4`
+export const Paragraph = styled.h3`
     max-width: 400px;
     font-size: 1rem;
     text-transform: uppercase;

@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
     margin: 30px 20px;
     line-height: 1.5;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
 `;
 

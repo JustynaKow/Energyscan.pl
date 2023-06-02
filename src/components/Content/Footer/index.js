@@ -7,12 +7,12 @@ const Footer = () => (
         <Object>
             {footer.map(({ link, src, alt, description }) => (
                 <Link href={link} key={alt}>
-                    <Icon src={src} alt={alt} />
+                    <Icon src={src} alt={alt} width="40px" height="40px" />
                     {description}
                 </Link>
             ))}
         </Object>
-        <Logo src={logo} alt="logo EnergyScan" />
+        <Logo src={logo} alt="logo EnergyScan" width="300px" height="100px" />
     </Wrapper>
 
 );

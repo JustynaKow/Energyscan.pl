@@ -18,8 +18,6 @@ export const Wrapper = styled.section`
 `;
 
 export const Logo = styled.img`
-    width: 300px;
-    height: 100px;
     object-fit: cover;
     transform: scale(1.5);
 `;
@@ -32,7 +30,6 @@ export const Object = styled.div`
 `;
 
 export const Icon = styled.img`
-    width: 40px;
     margin: 10px 20px;
 `;
 

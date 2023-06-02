@@ -20,10 +20,6 @@ export const Wrapper = styled.div`
     align-items: center;
 `;
 
-export const Photo = styled.img`
-    width: 50px;
-`;
-
 export const Paragraph = styled.h3`
     max-width: 400px;
     font-size: 1rem;

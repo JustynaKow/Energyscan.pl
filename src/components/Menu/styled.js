@@ -14,8 +14,6 @@ export const Navigation = styled.nav`
 `;
 
 export const Logo = styled.img`
-    width: 300px;
-    height: 100px;
     object-fit: cover;
     transform: scale(1.4);
 `;

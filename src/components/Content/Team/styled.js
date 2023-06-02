@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const Icon = styled.img`
-    width: 40px;
-`;
-
 export const Subtitle = styled.h3`
     text-transform: uppercase;
     font-size: 1rem;

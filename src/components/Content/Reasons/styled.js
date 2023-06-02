@@ -19,8 +19,6 @@ export const Container = styled.div`
 `;
 
 export const Photo = styled.img`
-    width: 500px;
-
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         width: 300px;
     }
@@ -48,8 +46,4 @@ export const Paragraf = styled.p`
     line-height: 1.2;
     max-width: 400px;
     margin: 0 0 0 70px;
-`;
-
-export const Image = styled.img`
-    width: 50px;
 `;

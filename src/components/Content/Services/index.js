@@ -1,4 +1,4 @@
-import { Description, Subtitle, Photo, Wrapper, Object, Images, List, Item } from "./styled";
+import { Description, Subtitle, Wrapper, Object, List, Item } from "./styled";
 import { Section, Title } from "../styled";
 import miernik from "../../../images/miernik.svg";
 import { services } from "./services";
@@ -16,7 +16,7 @@ const Services = ({ title }) => (
                 {services.map(({ photoSrc, alt, subtitle, description }, index) => (
                     <div key={`service-${index}`}>
                         <Object>
-                            <Photo src={photoSrc} alt={alt} />
+                            <img src={photoSrc} alt={alt} width="50px" height="50px" />
                             <Subtitle>{subtitle}</Subtitle>
                         </Object>
                         <List>
@@ -27,7 +27,7 @@ const Services = ({ title }) => (
                     </div>
                 ))}
             </div>
-            <Images src={miernik} alt="miernik elektryczny" />
+            <img src={miernik} alt="miernik elektryczny" width="300px"/>
         </Wrapper>
     </Section>
 );

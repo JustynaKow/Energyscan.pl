@@ -1,9 +1,9 @@
-import { Element, Image, Subtitle, Paragraf } from "./styled";
+import { Element, Subtitle, Paragraf } from "./styled";
 
 const ReasonsBox = ({ photo, title, article }) => (
     <>
         <Element>
-            <Image src={photo} alt={title} />
+            <img src={photo} alt={title} width="50px" height="50px" />
             <Subtitle> {title} </Subtitle>
         </Element>
         <Paragraf>

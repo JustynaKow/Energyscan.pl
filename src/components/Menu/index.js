@@ -1,4 +1,4 @@
-import { Navigation, Logo, Link, Icon, Wrapper } from "./styled";
+import { Navigation, Logo, Link } from "./styled";
 import { useMediaQuery } from "react-responsive";
 import { theme } from "../../theme";
 import logo from "../../images/logo.webp";
@@ -8,7 +8,7 @@ const Menu = () => {
 
     return (
         <Navigation>
-            <Logo src={logo} alt="logo EnergyScan" />
+            <Logo src={logo} alt="logo EnergyScan" width="300px" height="100px" />
             {!isMobile && (
                 <div>
                     <Link href="#reasons">Kiedy potrzebne?</Link>

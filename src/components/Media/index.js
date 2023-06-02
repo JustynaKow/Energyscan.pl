@@ -13,13 +13,13 @@ const Media = () => {
         !isMobile && (
             <Wrapper>
                 <a href={`tel:${Contact.PHONE}`}>
-                    <Icon src={phone} alt="Telefon" />
+                    <Icon src={phone} alt="Telefon" width="40px" height="40px" />
                 </a>
                 <a href={`mailto:${Contact.EMAIL}`}>
-                    <Icon src={massage} alt="E-mail" />
+                    <Icon src={massage} alt="E-mail" width="40px" height="40px"/>
                 </a>
                 <a href={`${Contact.FACEBOOK}`}>
-                    <Icon src={facebook} alt="Facebook" />
+                    <Icon src={facebook} alt="Facebook" width="40px" height="40px"/>
                 </a>
             </Wrapper>
         )

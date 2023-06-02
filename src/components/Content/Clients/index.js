@@ -1,5 +1,5 @@
 import { Title, Section } from "../styled";
-import { Photo, Paragraph, Wrapper, Image, Article, Container, Case } from "./styled";
+import { Paragraph, Wrapper, Image, Article, Container, Case } from "./styled";
 import people from "../../../images/human.webp";
 import houses from "../../../images/houseNew.svg";
 
@@ -21,7 +21,7 @@ const Clients = ({ title }) => {
                 <Case>
                     {persons.map((person) => (
                         <Wrapper key={person}>
-                            <Photo src={people} alt="ikona osoby" />
+                            <img src={people} width="50px" height="50px" alt="ikona osoby" />
                             <Paragraph>
                                 {person}
                             </Paragraph>

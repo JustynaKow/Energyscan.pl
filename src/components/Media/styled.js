@@ -13,7 +13,6 @@ export const Wrapper = styled.aside`
 `;
 
 export const Icon = styled.img`
-    width: 40px;
     margin: 10px;
     transition: 0.5s linear;
 

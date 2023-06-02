@@ -14,10 +14,6 @@ export const Subtitle = styled.h3`
     margin: 20px;
 `;
 
-export const Photo = styled.img`
-    width: 50px;
-`;
-
 export const Wrapper = styled.div`
     margin: 50px 30px;
     display: flex;
@@ -27,20 +23,16 @@ export const Wrapper = styled.div`
 `; 
 
 export const Object = styled.div`
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 `;
 
-export const Images = styled.img`
-width: 300px;
-`
-
 export const List = styled.ul`
-max-width: 700px;
-line-height: 1.5;
-padding: 0;
+    max-width: 700px;
+    line-height: 1.5;
+    padding: 0;
 `;
 
 export const Item = styled.li`
-list-style: none;
+    list-style: none;
 `;

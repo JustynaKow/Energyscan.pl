@@ -23,13 +23,13 @@ export const Wrapper = styled.header`
 `;
 
 export const Heading = styled.h1`
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: normal;
     text-transform: uppercase;
     max-width: 900px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 `;
 
@@ -55,6 +55,6 @@ export const Paragraph = styled.p`
     max-width: 500px;
     padding: 20px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.5;
 `;

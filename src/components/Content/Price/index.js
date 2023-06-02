@@ -31,7 +31,6 @@ const Price = ({ title }) => (
                 Zachęcamy do kontaktu telefonicznego aby porozmawiać o szczegółach współpracy!
             </strong>
         </Article>
-
     </Section>
 );
 

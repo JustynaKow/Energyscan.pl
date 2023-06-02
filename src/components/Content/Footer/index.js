@@ -6,7 +6,7 @@ const Footer = () => (
     <Wrapper id="footer">
         <Object>
             {footer.map(({ link, src, alt, description }) => (
-                <Link href={link}>
+                <Link href={link} key={alt}>
                     <Icon src={src} alt={alt} />
                     {description}
                 </Link>

@@ -6,11 +6,6 @@ export const Container = styled.div`
     position: absolute;
     z-index: 2;
     background: ${({ theme }) => theme.color.white};
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        position: static;
-        margin-top: 0;
-    }
 `;
 
 export const Section = styled.section`

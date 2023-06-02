@@ -16,6 +16,10 @@ export const Wrapper = styled.header`
     justify-content: center;
     align-items: center;
     padding: 120px 10px 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        height: 100%;
+    }
 `;
 
 export const Heading = styled.h1`

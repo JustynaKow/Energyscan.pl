@@ -11,13 +11,11 @@ export const Article = styled.article`
 `;
 
 export const Container = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        grid-template-columns: 1fr;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0 30px;
+    justify-content: space-between;
 `;
 
 export const Photo = styled.img`
@@ -48,7 +46,7 @@ export const Subtitle = styled.h3`
 
 export const Paragraf = styled.p`
     line-height: 1.2;
-    max-width: 700px;
+    max-width: 400px;
     margin: 0 0 0 70px;
 `;
 

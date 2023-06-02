@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-    padding: 40px 100px 20px;
+    padding: 40px 50px 20px;
     width: 100%;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {

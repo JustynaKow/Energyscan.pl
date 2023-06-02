@@ -26,6 +26,7 @@ export const Link = styled.a`
     color: ${({ theme }) => theme.color.white};
     text-transform: uppercase;
     font-weight: bold;
+    transition: color 0.3s;
 
     &:hover {
         color: ${({ theme }) => theme.color.husk};

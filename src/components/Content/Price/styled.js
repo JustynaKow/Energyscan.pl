@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Paragraph = styled.p`
     line-height: 1.5;
-    margin: 30px 20px;
+    margin: 30px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         margin: 10px;
@@ -16,7 +16,7 @@ export const Article = styled(Paragraph)`
 
 export const Wrapper = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 30px;
     flex-wrap: wrap;
 `;

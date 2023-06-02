@@ -6,7 +6,7 @@ export const prices = [
     {
         subtitle: `Mieszkanie`,
         imgSrc: blok,
-        price: 700,
+        price: 600,
     },
     {
         subtitle: `Dom`,

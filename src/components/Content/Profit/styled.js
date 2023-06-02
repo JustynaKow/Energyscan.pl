@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Article = styled.p`
     line-height: 1.5;
-    margin: 30px 20px;
+    margin: 30px;
 `;
 
 export const ArticleLast= styled(Article)`
@@ -12,10 +12,10 @@ export const ArticleLast= styled(Article)`
 `;
 
 export const Wrapper = styled.div`
-    margin: 30px 20px;
+    margin: 30px;
     line-height: 1.5;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 `;
 

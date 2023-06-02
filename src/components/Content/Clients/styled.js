@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        grid-template-columns: 1fr;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: flex-start;
 `;
 
 export const Case = styled.div`

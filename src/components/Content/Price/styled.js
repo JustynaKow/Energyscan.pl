@@ -59,5 +59,5 @@ export const Cost = styled.div`
 `;
 
 export const Image = styled.img`
-    transform: scale(1.3);
+    width: 150px;
 `;

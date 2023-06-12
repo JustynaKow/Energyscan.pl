@@ -1,7 +1,7 @@
 import { Title, Section } from "../styled";
 import { Paragraph, Wrapper, Image, Article, Container, Case } from "./styled";
 import people from "../../../images/human.webp";
-import houses from "../../../images/houseNew.svg";
+import houses from "../../../images/houseNew.jpg";
 
 const Clients = ({ title }) => {
 

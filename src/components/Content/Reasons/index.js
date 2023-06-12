@@ -1,6 +1,6 @@
 import { Article, Photo, Container, Wrapper } from "./styled";
 import { Title, Section } from "../styled";
-import certyfikate from "../../../images/certyfikate.svg";
+import certyfikate from "../../../images/certyfikate.jpg";
 import { reasons } from "./reasons";
 import ReasonsBox from "./ReasonsBox";
 

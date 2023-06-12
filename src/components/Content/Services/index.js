@@ -1,6 +1,6 @@
 import { Description, Subtitle, Wrapper, Object, List, Item } from "./styled";
 import { Section, Title } from "../styled";
-import miernik from "../../../images/miernik.svg";
+import miernik from "../../../images/miernik.jpg";
 import { services } from "./services";
 
 const Services = ({ title }) => (

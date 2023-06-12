@@ -19,6 +19,8 @@ export const Container = styled.div`
 `;
 
 export const Photo = styled.img`
+    width: 500px;
+
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         width: 300px;
     }

@@ -1,4 +1,4 @@
-import { Description, Subtitle, Wrapper, Object, List, Item } from "./styled";
+import { Description, Subtitle, Wrapper, Object, List, Item, Image } from "./styled";
 import { Section, Title } from "../styled";
 import miernik from "../../../images/miernik.jpg";
 import { services } from "./services";
@@ -27,7 +27,7 @@ const Services = ({ title }) => (
                     </div>
                 ))}
             </div>
-            <img src={miernik} alt="miernik elektryczny" width="300px"/>
+            <Image src={miernik} alt="miernik elektryczny"/>
         </Wrapper>
     </Section>
 );

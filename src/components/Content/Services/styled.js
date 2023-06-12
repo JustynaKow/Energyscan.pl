@@ -36,3 +36,7 @@ export const List = styled.ul`
 export const Item = styled.li`
     list-style: none;
 `;
+
+export const Image = styled.img`
+    width: 300px;
+`;

@@ -12,7 +12,7 @@ const Reasons = ({ title }) => (
                 <Article>
                     Świadectwo charakterystyki energetycznej jest dokumentem, który informuje o efektywności energetycznej danego budynku Obowiązek zależy od podejmowanych działań.
                 </Article>
-                <Photo src={certyfikate} alt="Certyfikat energetyczny" width="500px" />
+                <Photo src={certyfikate} alt="Certyfikat energetyczny" />
             </div>
             <Wrapper>
                 {reasons.map(({ photo, title, article }) => (

@@ -1,20 +1,15 @@
-import { Article, Photo, Container, Wrapper } from "./styled";
-import { Title, Section } from "../styled";
-import certyfikate from "../../../images/certyfikate.jpg";
+import { Container } from "./styled";
+import { Title, Section, Article } from "../styled";
 import { reasons } from "./reasons";
 import ReasonsBox from "./ReasonsBox";
 
 const Reasons = ({ title }) => (
     <Section id="reasons">
         <Title> {title} </Title>
+        <Article>
+            Świadectwo charakterystyki energetycznej jest dokumentem, który informuje o efektywności energetycznej danego budynku Obowiązek zależy od podejmowanych działań.
+        </Article>
         <Container>
-            <div>
-                <Article>
-                    Świadectwo charakterystyki energetycznej jest dokumentem, który informuje o efektywności energetycznej danego budynku Obowiązek zależy od podejmowanych działań.
-                </Article>
-                <Photo src={certyfikate} alt="Certyfikat energetyczny" />
-            </div>
-            <Wrapper>
                 {reasons.map(({ photo, title, article }) => (
                     <ReasonsBox
                         key={title}
@@ -23,7 +18,6 @@ const Reasons = ({ title }) => (
                         article={article}
                     />
                 ))}
-            </Wrapper>
         </Container>
     </Section >
 );

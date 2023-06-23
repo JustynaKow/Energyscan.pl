@@ -1,15 +1,13 @@
-import { Element, Subtitle, Paragraf } from "./styled";
+import { Subtitle, Paragraf, Wrapper, Image } from "./styled";
 
 const ReasonsBox = ({ photo, title, article }) => (
-    <>
-        <Element>
-            <img src={photo} alt={title} width="50px" height="50px" />
-            <Subtitle> {title} </Subtitle>
-        </Element>
+    <Wrapper>
+        <Image src={photo} alt={title} />
+        <Subtitle> {title} </Subtitle>
         <Paragraf>
             {article}
         </Paragraf>
-    </>
+    </Wrapper>
 );
 
 export default ReasonsBox;

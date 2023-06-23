@@ -11,9 +11,11 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background: ${({ theme }) => theme.color.white};
+        color: ${({ theme }) => theme.color.black};
         word-break: break-word;
-        font-family: 'Inter', sans-serif;
-        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto;
         padding: 0;
+        text-align: center;
     }
 `;

@@ -1,4 +1,4 @@
-import { Wrapper, Heading, Paragraph, Subheading, Dot } from "./styled";
+import { Wrapper, Heading, Subheading, Dot } from "./styled";
 
 const Header = () => (
     <Wrapper>
@@ -12,9 +12,6 @@ const Header = () => (
             <Dot>·</Dot>
             Augustów
         </Subheading>
-        <Paragraph>
-            Obowiązek posiadania świadectw od dnia 29.04.2023
-        </Paragraph>
     </Wrapper>
 );
 

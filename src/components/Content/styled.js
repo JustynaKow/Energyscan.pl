@@ -1,16 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-    margin-top: 100vh;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    background: ${({ theme }) => theme.color.white};
-`;
-
 export const Section = styled.section`
-    padding: 40px 50px 20px;
-    width: 100%;
+    padding: 100px 20px 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         padding: 10px;
@@ -19,12 +12,19 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
     text-transform: uppercase;
-    margin: 0 20px;
-    font-size: 2.5rem;
-    font-weight: normal;
-    border-bottom: 5px solid ${({ theme }) => theme.color.husk};
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 2rem;
+    text-align: center;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         font-size: 1.5rem;
     }
+`;
+
+export const Article = styled.p`
+    margin: 30px auto;
+    max-width: 900px;
+    line-height: 1.5;
+    text-align: center;
 `;

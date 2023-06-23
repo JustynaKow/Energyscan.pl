@@ -1,30 +1,29 @@
 import styled from "styled-components";
 
 export const Navigation = styled.nav`
-    background: rgb(27 27 27 / 25%);
+    background-color: ${({ theme }) => theme.color.white};
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 2;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid ${({ theme }) => theme.color.grey};
 `;
 
 export const Logo = styled.img`
     object-fit: cover;
-    transform: scale(1.4);
+    transform: scale(1.5);
 `;
 
 export const Link = styled.a`
     margin: 10px;
     text-decoration: none;
-    color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.black};
     text-transform: uppercase;
     font-weight: bold;
-    transition: color 0.3s;
 
     &:hover {
         color: ${({ theme }) => theme.color.husk};

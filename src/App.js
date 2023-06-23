@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Content from "./components/Content";
 import Media from "./components/Media";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Media />
       <Header />
       <Content />
+      <Footer />
     </>
   );
 }

@@ -19,6 +19,6 @@ export const Icon = styled.img`
     transition: 0.5s linear;
 
     &:hover{
-        transform: scale(1.4);
+        transform: scale(1.5);
     }
 `;

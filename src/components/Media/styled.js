@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.aside`
     position: fixed;
     padding: 0 20px;
+    z-index: 2;
     right: 0;
     bottom: 0;
 

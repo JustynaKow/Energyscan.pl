@@ -1,5 +1,5 @@
-import { Section, Title } from "../styled";
-import { Article, Wrapper, Container, ArticleLast } from "./styled";
+import { Section, Title, Article } from "../styled";
+import { Wrapper, Container } from "./styled";
 import { profit } from "./profit";
 
 const Profit = ({ title }) => (
@@ -19,9 +19,9 @@ const Profit = ({ title }) => (
                 </Container>
             ))}
         </Wrapper>
-        <ArticleLast>
-            Świadectwo charakterystyki energetycznej ma na celu dostarczenie użytkownikom i nabywcom informacji na temat efektywności energetycznej danego obiektu, co pozwala podejmować świadome decyzje dotyczące oszczędzania energii, zmniejszania kosztów eksploatacji i wpływu na środowisko.
-        </ArticleLast>
+        <Article>
+            <strong> Świadectwo charakterystyki energetycznej ma na celu dostarczenie użytkownikom i nabywcom informacji na temat efektywności energetycznej danego obiektu, co pozwala podejmować świadome decyzje dotyczące oszczędzania energii, zmniejszania kosztów eksploatacji i wpływu na środowisko. </strong>
+        </Article>
     </Section>
 );
 

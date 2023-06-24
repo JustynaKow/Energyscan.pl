@@ -1,19 +1,5 @@
 import styled from "styled-components";
 
-export const Paragraph = styled.p`
-    line-height: 1.5;
-    margin: 30px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        margin: 10px;
-    }
-`;
-
-export const Article = styled(Paragraph)`
-    text-align: center;
-    margin-top: 50px;
-`;
-
 export const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
@@ -22,15 +8,24 @@ export const Wrapper = styled.div`
 `;
 
 export const Element = styled.div`
-    border-radius: 20px;
-    padding: 10px;
-    margin: 10px 0;
     width: 300px;
     height: 300px;
-    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
+    border: 3px solid ${({ theme }) => theme.color.husk};
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+`;
+
+export const Container = styled.div`
+    background-color: ${({ theme }) => theme.color.light};
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 `;
 
@@ -40,24 +35,18 @@ export const Subtitle = styled.h3`
 `;
 
 export const Cost = styled.div`
-    border-radius: 10px;
     background-color: ${({ theme }) => theme.color.husk};
     color: ${({ theme }) => theme.color.white};
-    border: 2px solid ${({ theme }) => theme.color.husk};
-    margin: 20px;
+    box-shadow: 1px 3px 27px 1px rgba(252, 197, 33, 0.45);
+    border-radius: 5px;
+    margin: 10px;
     width: 200px;
-    padding: 10px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-
-    &:hover {
-        background-color: ${({ theme }) => theme.color.white};
-        color: ${({ theme }) => theme.color.husk};
-        border: 2px solid ${({ theme }) => theme.color.husk};
-    }
+    padding: 10px;
 `;
 
 export const Image = styled.img`
-    width: 150px;
+    width: 100px;
 `;

@@ -1,5 +1,5 @@
-import { Wrapper, Paragraph, Article } from "./styled";
-import { Section, Title } from "../styled";
+import { Wrapper } from "./styled";
+import { Section, Title, Article } from "../styled";
 import PriceBox from "./PriceBox";
 import { prices } from "./prices";
 
@@ -8,14 +8,12 @@ const Price = ({ title }) => (
         <Title>
             {title}
         </Title>
-        <Paragraph>
-            Cena za świadectwo energetyczne zależy od rodzaju nieruchomości i jej specyfiki. <br />
+        <Article>
+            Cena za świadectwo energetyczne zależy od rodzaju nieruchomości i jej specyfiki.
             Wycena oraz czas wykonania jest indywidualny dla każdego klienta.
-        </Paragraph>
-        <Paragraph>
             Na ostateczną cenę mają wpływ czynniki takie, jak: <br />
-            powierzchnia nieruchomości, sposób ogrzewania czy odległość od naszego biura, gdy występuje konieczność dokonania pomiarów.
-        </Paragraph>
+            <strong> powierzchnia nieruchomości, sposób ogrzewania czy odległość od naszego biura, gdy występuje konieczność dokonania pomiarów. </strong>
+        </Article>
         <Wrapper>
             {prices.map(({ subtitle, imgSrc, price }) => (
                 <PriceBox

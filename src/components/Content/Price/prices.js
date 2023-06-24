@@ -1,6 +1,6 @@
-import dom from "../../../images/1.jpg";
-import blok from "../../../images/2.jpg";
-import lokal from "../../../images/3.jpg";
+import dom from "../../../images/house.svg";
+import blok from "../../../images/apartment.svg";
+import lokal from "../../../images/place.svg";
 
 export const prices = [
     {

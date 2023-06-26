@@ -1,22 +1,20 @@
-import { Description, Subtitle, Wrapper, Object, List, Item, Image } from "./styled";
-import { Section, Title } from "../styled";
-import miernik from "../../../images/miernik.jpg";
+import { Subtitle, Wrapper, Object, List, Item } from "./styled";
+import { Section, Title, Article } from "../styled";
 import { services } from "./services";
 
 const Services = ({ title }) => (
     <Section id="services">
         <Title> {title} </Title>
-        <Description>
-            Jesteśmy zespołem profesjonalistów, specjalizujących się w dziedzinie energetyki. <br />
-            Działamy z pełnym zaangażowaniem, aby pomóc naszym klientom w efektywnym zarządzaniu energią oraz poprawie wydajności ich instalacji. <br />
+        <Article>
+            Jesteśmy zespołem profesjonalistów, specjalizujących się w dziedzinie energetyki.
+            Działamy z pełnym zaangażowaniem, aby pomóc naszym klientom w efektywnym zarządzaniu energią oraz poprawie wydajności ich instalacji.
             Oferujemy usługi, które są kluczowe dla osiągnięcia tych celów:
-        </Description>
+        </Article>
         <Wrapper>
-            <div>
                 {services.map(({ photoSrc, alt, subtitle, description }, index) => (
                     <div key={`service-${index}`}>
                         <Object>
-                            <img src={photoSrc} alt={alt} width="50px" height="50px" />
+                            <img src={photoSrc} alt={alt} width="200px" height="200px" />
                             <Subtitle>{subtitle}</Subtitle>
                         </Object>
                         <List>
@@ -26,8 +24,6 @@ const Services = ({ title }) => (
                         </List>
                     </div>
                 ))}
-            </div>
-            <Image src={miernik} alt="miernik elektryczny"/>
         </Wrapper>
     </Section>
 );

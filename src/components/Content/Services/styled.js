@@ -1,25 +1,16 @@
 import styled from "styled-components";
 
-export const Description = styled.p`
-    margin: 30px;
-    line-height: 1.5;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        margin: 10px;
-    }
-`;
-
 export const Subtitle = styled.h3`
     text-transform: uppercase;
-    margin: 20px;
+    margin: 20px -20px;
+    max-width: 300px;
 `;
 
 export const Wrapper = styled.div`
     margin: 50px 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
 `; 
 
 export const Object = styled.div`
@@ -28,15 +19,14 @@ export const Object = styled.div`
 `;
 
 export const List = styled.ul`
-    max-width: 700px;
+    width: 350px;
+    height: 250px;
     line-height: 1.5;
     padding: 0;
+    margin: 0 auto;
+    text-align: justify;
 `;
 
 export const Item = styled.li`
-    list-style: none;
-`;
-
-export const Image = styled.img`
-    width: 300px;
+    list-style: circle;
 `;

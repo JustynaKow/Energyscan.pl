@@ -1,6 +1,6 @@
 import Reasons from "./Reasons";
 import Price from "./Price";
-import Team from "./Team";
+import Advantages from "./Advantages";
 import Services from "./Services";
 import Clients from "./Clients";
 import Profit from "./Profit";
@@ -14,7 +14,7 @@ const Content = () => (
     <Clients title="Kto powinien posiadać świadectwo charakterystyki energetycznej?" />
     <Price title="Ile to kosztuje?" />
     <Profit title="O czym informuje świadectwo charakterystyki energetycznej?" />
-    <Team title="Co nas wyróżnia" />
+    <Advantages title="Co nas wyróżnia?" />
     <Rating />
     <Services title="Nasze pozostałe usługi" />
   </>

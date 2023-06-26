@@ -12,7 +12,7 @@ const Advantages = ({ title }) => {
     ];
 
     return (
-        <Section id="aboutUs">
+        <Section id="o-nas">
             <Title>{title}</Title>
             <Container>
                 {advantages.map((item, itemIndex) => (

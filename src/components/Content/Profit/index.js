@@ -3,7 +3,7 @@ import { Wrapper, Container } from "./styled";
 import { profit } from "./profit";
 
 const Profit = ({ title }) => (
-    <Section id="profit">
+    <Section id="co-zyskujesz">
         <Title>{title}</Title>
         <Article>
             Świadectwo charakterystyki energetycznej informuje o efektywności energetycznej budynku lub lokalu mieszkalnego. Zawiera ono ważne informacje dotyczące zużycia energii i kosztów związanych z eksploatacją nieruchomości.

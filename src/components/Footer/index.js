@@ -3,7 +3,7 @@ import logo from "../../images/energyscan.webp";
 import { footer } from "./footer";
 
 const Footer = () => (
-    <Wrapper id="footer">
+    <Wrapper id="kontakt">
         <Object>
             {footer.map(({ link, src, alt, description }) => (
                 <Link href={link} key={alt}>

@@ -11,13 +11,13 @@ const Menu = () => {
             <Logo src={logo} alt="logo EnergyScan" width="300px" height="100px" />
             {!isMobile && (
                 <div>
-                    <Link href="#reasons">Kiedy potrzebne?</Link>
-                    <Link href="#clients">Dla kogo?</Link>
-                    <Link href="#price">Cennik</Link>
-                    <Link href="#profit">Co zyskujesz?</Link>
-                    <Link href="#services">Nasze usługi</Link>
-                    <Link href="#aboutUs">O nas</Link>
-                    <Link href="#footer">Kontakt</Link>
+                    <Link href="#kiedy-potrzebne">Kiedy potrzebne?</Link>
+                    <Link href="#dla-kogo">Dla kogo?</Link>
+                    <Link href="#cennik">Cennik</Link>
+                    <Link href="#co-zyskujesz">Co zyskujesz?</Link>
+                    <Link href="#nasze-uslugi">Nasze usługi</Link>
+                    <Link href="#o-nas">O nas</Link>
+                    <Link href="#kontakt">Kontakt</Link>
                 </div>
             )}
         </Navigation >

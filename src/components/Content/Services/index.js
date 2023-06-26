@@ -3,7 +3,7 @@ import { Section, Title, Article } from "../styled";
 import { services } from "./services";
 
 const Services = ({ title }) => (
-    <Section id="services">
+    <Section id="nasze-uslugi">
         <Title> {title} </Title>
         <Article>
             Jesteśmy zespołem profesjonalistów, specjalizujących się w dziedzinie energetyki.

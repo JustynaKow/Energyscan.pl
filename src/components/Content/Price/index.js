@@ -4,7 +4,7 @@ import PriceBox from "./PriceBox";
 import { prices } from "./prices";
 
 const Price = ({ title }) => (
-    <Section id="price">
+    <Section id="cennik">
         <Title>
             {title}
         </Title>

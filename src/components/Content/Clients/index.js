@@ -3,7 +3,7 @@ import { Subtitle, Wrapper, Container } from "./styled";
 import { person } from "./person";
 
 const Clients = ({ title }) => (
-        <Section id="clients">
+        <Section id="dla-kogo">
             <Title>
                 {title}
             </Title>

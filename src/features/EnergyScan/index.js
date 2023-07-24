@@ -6,10 +6,12 @@ import Clients from "./Clients";
 import Profit from "./Profit";
 import Information from "./Information";
 import Rating from "./Rating";
+import Header from "./Header";
 
-const Content = () => (
+const EnergyScan = () => (
   <>
-    <Reasons title="W jakich przypadkach potrzebujesz świadectwa charakterystyki energetycznej?"/>
+    <Header />
+    <Reasons title="W jakich przypadkach potrzebujesz świadectwa charakterystyki energetycznej?" />
     <Information />
     <Clients title="Kto powinien posiadać świadectwo charakterystyki energetycznej?" />
     <Price title="Ile to kosztuje?" />
@@ -20,4 +22,4 @@ const Content = () => (
   </>
 );
 
-export default Content;
+export default EnergyScan;

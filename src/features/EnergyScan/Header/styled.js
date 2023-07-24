@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "../../images/background.jpg";
+import background from "../../../images/background.jpg";
 
 export const Wrapper = styled.header`
     background: center / cover no-repeat url("${background}");

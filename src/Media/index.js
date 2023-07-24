@@ -1,10 +1,10 @@
-import phone from "../../images/media-phone.svg";
-import massage from "../../images/media-massage.svg";
-import facebook from "../../images/media-facebook.svg";
-import Contact from "../../constants";
+import phone from "../images/media-phone.svg";
+import massage from "../images/media-massage.svg";
+import facebook from "../images/media-facebook.svg";
+import Contact from "../constants";
 import { Icon, Wrapper } from "./styled";
 import { useMediaQuery } from "react-responsive";
-import { theme } from "../../theme";
+import { theme } from "../theme";
 
 const Media = () => {
     const isMobile = useMediaQuery({ maxWidth: theme.breakpoint.mobileMax });

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Navigation = styled.nav`
     background-color: ${({ theme }) => theme.color.white};
@@ -18,7 +19,7 @@ export const Logo = styled.img`
     transform: scale(1.5);
 `;
 
-export const Link = styled.a`
+export const MenuLink = styled.a`
     margin: 10px;
     text-decoration: none;
     color: ${({ theme }) => theme.color.black};
@@ -29,3 +30,15 @@ export const Link = styled.a`
         color: ${({ theme }) => theme.color.husk};
     };
 `;
+
+export const StyledLink = styled(Link)`
+    margin: 10px;
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.black};
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+        color: ${({ theme }) => theme.color.husk};
+    };
+`

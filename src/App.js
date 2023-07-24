@@ -1,19 +1,30 @@
-import Header from "./components/Header";
-import Menu from "./components/Menu";
-import Content from "./components/Content";
-import Media from "./components/Media";
-import Footer from "./components/Footer";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import PrivacyPolitycy from "./features/PrivacyPolitycy";
+import EnergyScan from "./features/EnergyScan";
+import Menu from "./Menu";
+import Media from "./Media";
+import Footer from "./Footer";
 
 function App() {
-
   return (
-    <>
+    <HashRouter>
       <Menu />
-      <Media />
-      <Header />
-      <Content />
+
+      <Switch>
+        <Route path="/polityka-prywatności">
+          <PrivacyPolitycy />
+        </Route>
+        <Route path="/">
+          <EnergyScan />
+        </Route>
+        <Route>
+          <Redirect to="/" />
+        </Route>
+      </Switch>
+
       <Footer />
-    </>
+      <Media />
+    </HashRouter>
   );
 }
 

@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   text-transform: uppercase;
+  color: red;
   padding: 50px;
 `;
 

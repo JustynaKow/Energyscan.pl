@@ -1,9 +1,9 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import PrivacyPolitycy from "./features/PrivacyPolitycy";
 import EnergyScan from "./features/EnergyScan";
-import Menu from "./Menu";
-import Media from "./Media";
-import Footer from "./Footer";
+import Menu from "./common/Menu";
+import Media from "./common/Media";
+import Footer from "./common/Footer";
 
 function App() {
   return (

@@ -17,8 +17,8 @@ const Menu = () => {
                     <MenuLink href="#dla-kogo">Dla kogo?</MenuLink>
                     <MenuLink href="#cennik">Cennik</MenuLink>
                     <MenuLink href="#co-zyskujesz">Co zyskujesz?</MenuLink>
-                    <MenuLink href="#nasze-uslugi">Nasze usługi</MenuLink>
                     <MenuLink href="#o-nas">O nas</MenuLink>
+                    <MenuLink href="#nasze-uslugi">Nasze usługi</MenuLink>
                     <MenuLink href="#kontakt">Kontakt</MenuLink>
                 </div>
             )}

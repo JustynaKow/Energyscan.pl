@@ -1,5 +1,7 @@
 import { Subtitle, Wrapper, Object, List, Item } from "./styled";
-import { Section, Title, Article } from "../styled";
+import { Section } from "../../../common/Section";
+import { Title } from "../../../common/Title";
+import { Article } from "../../../common/Article";
 import { services } from "./services";
 
 const Services = ({ title }) => (

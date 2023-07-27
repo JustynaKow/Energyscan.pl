@@ -1,5 +1,7 @@
 import { Container } from "./styled";
-import { Title, Section, Article } from "../styled";
+import { Section } from "../../../common/Section";
+import { Title } from "../../../common/Title";
+import { Article } from "../../../common/Article";
 import { reasons } from "./reasons";
 import ReasonsBox from "./ReasonsBox";
 

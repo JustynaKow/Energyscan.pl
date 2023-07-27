@@ -1,4 +1,5 @@
-import { Section, Title } from "../styled";
+import { Section } from "../../../common/Section";
+import {Title} from "../../../common/Title";
 import { Subtitle, Container, Element, Image } from "./styled";
 import loupe from "../../../images/loupe.svg";
 

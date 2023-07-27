@@ -1,4 +1,6 @@
-import { Section, Title, Article } from "../styled";
+import { Section } from "../../../common/Section";
+import { Title } from "../../../common/Title";
+import { Article } from "../../../common/Article";
 import { Wrapper, Container } from "./styled";
 import { profit } from "./profit";
 

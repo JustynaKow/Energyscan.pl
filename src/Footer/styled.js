@@ -18,13 +18,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Logo = styled.img`
-  object-fit: cover;
-  transform: scale(1.5);
-  position: relative;
-  z-index: 1; 
-`;
-
 export const Object = styled.div`
   max-width: 700px;
   display: flex;
@@ -42,17 +35,18 @@ export const Hyperlink = styled.a`
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-align: left;
 
   &:hover {
     text-decoration: underline;
   }
+
 `;
 
 export const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
-  position: relative; 
-  z-index: 2; 
+  margin-top: 20px;
 
   &:hover {
     text-decoration: underline;
@@ -64,4 +58,14 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+  margin: 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const Element = styled.div`
+  display: flex;
 `;

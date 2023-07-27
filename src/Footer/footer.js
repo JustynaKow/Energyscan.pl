@@ -8,7 +8,7 @@ export const footer = [
     link: `tel:${Contact.PHONE}`,
     src: phone,
     alt: `telefon`,
-    description: `Zadzwoń do nas: +48 530 196 930`,
+    description: `Zadzwoń do nas: ${Contact.PHONE}`,
 },
 {
     link: `mailto:${Contact.EMAIL}`,

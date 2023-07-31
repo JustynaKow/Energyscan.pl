@@ -8,8 +8,10 @@ export const theme = {
         gamboge: "#E5A810",
         grey: "#d9d9d9",
         light: "#f0f0f0",
+        red: "#f0000f",
     },
     breakpoint: {
         mobileMax: 767,
+        tabletMax: 1023,
     },
 };

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.aside`
     position: fixed;
-    padding: 0 20px;
+    padding: 5px 20px;
     z-index: 2;
     right: 0;
     bottom: 0;
@@ -10,7 +10,7 @@ export const Wrapper = styled.aside`
     flex-direction: column;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        padding: 0 10px;
+        padding: 5px 10px;
     }
 `;
 

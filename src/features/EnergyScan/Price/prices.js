@@ -6,16 +6,16 @@ export const prices = [
     {
         subtitle: `Mieszkanie`,
         imgSrc: blok,
-        price: 600,
+        price: 499,
     },
     {
         subtitle: `Dom`,
         imgSrc: dom,
-        price: 800,
+        price: 749,
     },
     {
         subtitle: `Lokal`,
         imgSrc: lokal,
-        price: 1000,
+        price: 949,
     },
 ];

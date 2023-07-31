@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import background from "../../images/backgorund.jpg";
 
 export const Wrapper = styled.div`
   padding: 20px;
   width: 100%;
-  background: ${({ theme }) => theme.color.gamboge};
+  background: center / cover no-repeat url(${background});
   color: ${({ theme }) => theme.color.white};
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -39,6 +40,10 @@ export const Hyperlink = styled.a`
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    font-size: smaller;
   }
 
 `;

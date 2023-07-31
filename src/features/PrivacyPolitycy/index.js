@@ -1,9 +1,8 @@
-import { Section } from "../../common/Section";
 import { Title } from "../../common/Title";
-import { Paragraph } from "./styled";
+import { Paragraph, Wrapper } from "./styled";
 
 const PrivacyPolitycy = () => (
-  <Section>
+  <Wrapper>
     <Title>
       Klauzula informacyjna RODO w zakresie przetwarzania danych osobowych
     </Title>
@@ -69,7 +68,7 @@ const PrivacyPolitycy = () => (
         <li>Podanie przez Państwa danych osobowych jest dobrowolne;</li>
       </ol>
     </Paragraph>
-  </Section>
+  </Wrapper>
 );
 
 export default PrivacyPolitycy;

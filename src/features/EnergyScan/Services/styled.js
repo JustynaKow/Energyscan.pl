@@ -29,4 +29,5 @@ export const List = styled.ul`
 
 export const Item = styled.li`
     list-style: circle;
+    list-style-position: inside;
 `;

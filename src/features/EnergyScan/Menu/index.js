@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Navigation, Logo, Hamburger } from "./styled";
-import { theme } from "../../theme";
-import logo from "../../images/logo.svg";
-import hamburger from "../../images/hamburger.svg";
+import { theme } from "../../../theme";
+import logo from "../../../images/logo.svg";
+import hamburger from "../../../images/hamburger.svg";
 import MenuLinks from "./menuLinks";
 
 const Menu = () => {

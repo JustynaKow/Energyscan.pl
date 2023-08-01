@@ -1,8 +1,11 @@
 import { Title } from "../../common/Title";
-import { Paragraph, Wrapper } from "./styled";
+import { Paragraph, Wrapper, StyledLink, Container } from "./styled";
 
 const PrivacyPolitycy = () => (
   <Wrapper>
+    <Container>
+    <StyledLink to="/">⬅</StyledLink>
+    </Container>
     <Title>
       Klauzula informacyjna RODO w zakresie przetwarzania danych osobowych
     </Title>

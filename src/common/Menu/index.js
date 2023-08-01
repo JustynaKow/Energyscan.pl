@@ -1,29 +1,36 @@
-import { Navigation, Logo, MenuLink, StyledLink } from "./styled";
+import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Navigation, Logo, Hamburger } from "./styled";
 import { theme } from "../../theme";
-import logo from "../../images/logo.webp";
+import logo from "../../images/logo.svg";
+import hamburger from "../../images/hamburger.svg";
+import MenuLinks from "./menuLinks";
 
 const Menu = () => {
-    const isMobile = useMediaQuery({ maxWidth: theme.breakpoint.mobileMax });
-    const scrollToUp = () => (window.scrollTo({ top: 0 }));
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isMobile = useMediaQuery({ maxWidth: theme.breakpoint.tabletMax });
 
-    return (
-        <Navigation>
-            <Logo src={logo} alt="logo EnergyScan" width="300px" height="100px" />
-            {!isMobile && (
-                <div>
-                    <StyledLink to="/" onClick={scrollToUp}>Home</StyledLink>
-                    <MenuLink href="#kiedy-potrzebne">Kiedy potrzebne?</MenuLink>
-                    <MenuLink href="#dla-kogo">Dla kogo?</MenuLink>
-                    <MenuLink href="#cennik">Cennik</MenuLink>
-                    <MenuLink href="#co-zyskujesz">Co zyskujesz?</MenuLink>
-                    <MenuLink href="#o-nas">O nas</MenuLink>
-                    <MenuLink href="#nasze-uslugi">Nasze usługi</MenuLink>
-                    <MenuLink href="#kontakt">Kontakt</MenuLink>
-                </div>
-            )}
-        </Navigation >
-    );
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <Navigation>
+      <Logo src={logo} alt="logo EnergyScan" />
+      {isMobile ? (
+        <>
+          <Hamburger src={hamburger} alt="menu" onClick={handleMenuToggle} />
+          {isMenuOpen && <MenuLinks handleLinkClick={handleLinkClick}/>}
+        </>
+      ) : (
+        <MenuLinks />
+      )}
+    </Navigation>
+  );
 };
 
 export default Menu;

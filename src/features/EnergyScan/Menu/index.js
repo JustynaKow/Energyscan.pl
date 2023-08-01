@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Navigation, Logo, Hamburger } from "./styled";
 import { theme } from "../../../theme";
-import logo from "../../../images/logo.svg";
+import logo from "../../../images/logo.webp";
 import hamburger from "../../../images/hamburger.svg";
 import MenuLinks from "./menuLinks";
 

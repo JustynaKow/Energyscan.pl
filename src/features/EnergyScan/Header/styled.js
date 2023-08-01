@@ -58,16 +58,20 @@ export const Heading = styled.h1`
   margin-left: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
   }
 `;
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
   margin-left: 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    align-items: center;
+  }
 `;
 
 export const Subheading = styled.h2`
@@ -82,10 +86,9 @@ export const Subheading = styled.h2`
 export const Dot = styled.span`
   color: ${({ theme }) => theme.color.red};
   font-size: 48px;
-  margin: 0 10px;
+  margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    margin: 0;
     font-size: 18px;
   }
 `;

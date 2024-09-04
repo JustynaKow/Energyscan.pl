@@ -27,7 +27,7 @@ const Header = () => (
     <Picture src={background} alt="żarówka" />
     <div>
       <Button>
-        <Link href={`tel:${Contact.PHONE}`}>+48 530 196 930 </Link>
+        <Link href={`tel:${Contact.PHONE}`}>+48 530 317 847</Link>
       </Button>
       <Button>
         <Link href={`mailto:${Contact.EMAIL}`}>{Contact.EMAIL} </Link>
